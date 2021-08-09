@@ -11,6 +11,8 @@ keywords = ["bevy"]
 [features]
 default = []
 filesystem_watcher = ["notify"]
+async-io = ["bevy_tasks/async-io"]
+tokio = ["bevy_tasks/tokio"]
 
 [dependencies]
 # bevy
@@ -42,5 +44,4 @@ js-sys = "0.3"
 ndk-glue = { version = "0.5" }
 
 [dev-dependencies]
-futures-lite = "1.4.0"
 tempfile = "3.2.0"
